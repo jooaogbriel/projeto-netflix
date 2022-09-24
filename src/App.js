@@ -3,6 +3,7 @@ import Tmdb from "./Tmdb";
 import './App.css'
 import MovieRow from "./components/MovieRow";
 import FeaturedMovie from './components/FeaturedMovie'
+import Header from "./components/Header";
 
 function App()  {
 
@@ -28,6 +29,8 @@ function App()  {
 
   return (
     <div className="page" >
+
+      <Header/>
 
       {featuredData &&
       <FeaturedMovie item={featuredData}/>
